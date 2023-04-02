@@ -24,12 +24,21 @@ This project operates a 74HC595 shift register from a normal serial port
 ----  
 # PWM
 
- I was asked if this could do PWM, well, kinda.
- 115200bits/sec 10 bits/byte is 11520 bytes/sec
- 11520 bytes/sec at 5 bytes/74595-load is 2304 loads/second
- 2304 loads/sec at 32 updates/pwm cycle (5 bit pwm) leaves you with 72Hz PWM
+    I was asked if this could do PWM, well, kinda.
+    115200bits/sec 10 bits/byte is 11520 bytes/sec
+    11520 bytes/sec at 5 bytes/74595-load is 2304 loads/second
+    2304 loads/sec at 32 updates/pwm cycle (5 bit pwm) leaves you with 72Hz PWM
 
 so yes, for 5 bit PWM, it can do 72Hz.
+
+----
+#Hardware
+  Its just a 74HC14, a few discrete components and the 74HC595s
+  
+  ![Schematic](schematic.jpg)
+  ![Build refrence](buildref1.jpg)
+  ![Build refrence](buildref2.jpg)
+
 
 ----
 # Demo
@@ -63,6 +72,15 @@ I have pre-generated binary files as required to display Jennys phone number.
     convertByte(CG[3], 0);  // load 8 more bits into the registers
     convertByte(CG[0], 0);  // load 8 more bits into the registers
     convertByte(CG[9], 1);  // load 8 more bits into the registers, and latch all the outputs
+
+----
+#Roll your own
+
+Here is the chart I used to build the encoder. It may give you some clues if you want to 
+make a modified system. I have only used the values with asterisks beside them in 
+the code, as thats a complete set to generate any output.
+
+![encoder Chart](bitChart.jpg)
 
 
 ----
