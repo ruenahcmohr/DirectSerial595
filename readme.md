@@ -32,7 +32,8 @@ This project operates a 74HC595 shift register from a normal serial port
 so yes, for 5 bit PWM, it can do 72Hz.
 
 ----
-#Hardware
+# Hardware
+
   Its just a 74HC14, a few discrete components and the 74HC595s
   
   ![Schematic](schematic.jpg)
@@ -90,5 +91,6 @@ Find and request clarification on all the things I'v accidently left out
 ok?  
 
 I can be found on twitter (@ruenahcmohr) 
+
 or on the libera irc network, in #robotics ( https://web.libera.chat/?channel=#robotics )
 
