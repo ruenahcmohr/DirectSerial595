@@ -75,7 +75,7 @@ I have pre-generated binary files as required to display Jennys phone number.
     convertByte(CG[9], 1);  // load 8 more bits into the registers, and latch all the outputs
 
 ----
-#Roll your own
+# Roll your own
 
 Here is the chart I used to build the encoder. It may give you some clues if you want to 
 make a modified system. I have only used the values with asterisks beside them in 
