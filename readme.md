@@ -36,13 +36,13 @@ so yes, for 5 bit PWM, it can do 72Hz.
 
 The demo code operates a single 7 segment digit
 
-Qa -> A
-Qb -> B
-Qc -> C
-Qd -> D
-Qe -> E
-Qf -> F
-Qg -> G
+    Qa -> A
+    Qb -> B
+    Qc -> C
+    Qd -> D
+    Qe -> E
+    Qf -> F
+    Qg -> G
 
 I have pre-generated binary files as required to display Jennys phone number.
 
