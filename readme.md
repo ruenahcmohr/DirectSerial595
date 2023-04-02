@@ -1,5 +1,5 @@
 
-115kbaud serial to 595 adapter.
+# 115kbaud serial to 595 adapter.
 
 ah so cool, where do I start!?
 
@@ -22,7 +22,7 @@ This project operates a 74HC595 shift register from a normal serial port
     to the middle value between 3 and 4 bit-times.
   
 ----  
-PWM
+# PWM
 
  I was asked if this could do PWM, well, kinda.
  115200bits/sec 10 bits/byte is 11520 bytes/sec
@@ -32,6 +32,7 @@ PWM
 so yes, for 5 bit PWM, it can do 72Hz.
 
 ----
+# Demo
 
 The demo code operates a single 7 segment digit
 
@@ -47,7 +48,7 @@ I have pre-generated binary files as required to display Jennys phone number.
 
 ----
 
-Compile:
+# Compile
 
  This is compiled with gcc *.c -o genbin
    
@@ -57,10 +58,11 @@ Compile:
  last call.
  
  example:
-   convertByte(CG[5], 0);  // load 8 bits into the registers
-   convertByte(CG[3], 0);  // load 8 more bits into the registers
-   convertByte(CG[0], 0);  // load 8 more bits into the registers
-   convertByte(CG[9], 1);  // load 8 more bits into the registers, and latch all the outputs
+ 
+    convertByte(CG[5], 0);  // load 8 bits into the registers
+    convertByte(CG[3], 0);  // load 8 more bits into the registers
+    convertByte(CG[0], 0);  // load 8 more bits into the registers
+    convertByte(CG[9], 1);  // load 8 more bits into the registers, and latch all the outputs
 
 
 ----
